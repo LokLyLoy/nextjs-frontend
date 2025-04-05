@@ -1,0 +1,26 @@
+@use './icons/style' as *;
+@use './global' as *;
+@use './header' as *;
+@use './footer' as *;
+@use './slider' as *;
+@use './pagination' as *;
+@use './modal' as *;
+@use './text-has-line-before' as *;
+
+@use './section/about' as *;
+@use './section/payment-gateway' as *;
+@use './section/blog-list' as *;
+@use './section/list-partner' as *;
+@use './section/service' as *;
+@use './section/card' as *;
+@use './section/project' as *;
+@use './section/counter' as *;
+@use './section/testimonial' as *;
+@use './section/form-request' as *;
+@use './section/our-team' as *;
+@use './section/case-studies' as *;
+@use './section/list-pricing' as *;
+@use './section/questionFAQ' as *;
+
+@use 'tailwindcss' as *;
+

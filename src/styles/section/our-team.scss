@@ -1,0 +1,85 @@
+.our-team-block {
+    .container {
+        .list-member {
+            .col-12 {
+                .bg-img {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 20px;
+                    cursor: pointer;
+
+                    img {
+                        transition: all ease 0.5s;
+                    }
+
+                    .list-social {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 8px;
+                        position: absolute;
+                        top: 60%;
+                        transform: translateY(-50%);
+                        right: -80px;
+                        border-radius: 8px;
+                        padding: 12px 8px;
+                        transition: all ease-in-out 0.5s;
+
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            width: 30px;
+                            height: 30px;
+
+                            i {
+                                margin-left: 2px;
+
+                                &::before {
+                                    color: var(--on-surface);
+                                }
+                            }
+
+                            &:hover {
+                                background-color: var(--blue);
+
+                                i {
+                                    &::before {
+                                        color: var(--white);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .infor {
+                    .name {
+                        transition: all ease-in-out 0.3s;
+                    }
+                }
+
+                &:hover {
+                    cursor: pointer;
+
+                    .bg-img {
+                        img {
+                            transform: scale(1.07);
+                        }
+                    }
+
+                    .list-social {
+                        transition: all ease-in-out 0.5s;
+                        right: 20px;
+                    }
+
+                    .infor {
+                        .name {
+                            color: var(--blue);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.service-block {
+    .service-item {
+        .read-more {
+            &:hover {
+                svg {
+                    transform: translateX(4px);
+                }
+            }
+        }
+    }
+
+    &.style-three {
+        .service-item-main {
+            i {
+                &::before {
+                    color: var(--gradient);
+                }
+            }
+        }
+    }
+
+    &.style-six {
+        .list-service {
+            .service-item {
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                background: radial-gradient(50.00% 50% at 22.80% -0.00%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%);
+                backdrop-filter: blur(6px);
+                position: relative;
+                height: 100%;
+                display: block;
+                transition: all ease 0.4s;
+
+                .icon {
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0.30) 0%, rgba(249, 249, 249, 0.00) 100%);
+                    backdrop-filter: blur(17px);
+                    position: absolute;
+                    top: -50px;
+                    transition: background ease 0.5s;
+
+                    i {
+                        &::before {
+                            color: var(--white);
+                        }
+                    }
+                }
+
+                &:hover {
+                    margin-top: -10px;
+
+                    .icon {
+                        background: var(--orange);
+                        // backdrop-filter: unset;
+                    }
+                }
+
+                @media (max-width: 1023.99px) {
+                    &:hover {
+                        margin-top: 0;
+                    }
+                }
+
+                @media (max-width: 767.99px) {
+                    .icon {
+                        top: -40px;
+                    }
+                }
+            }
+        }
+
+        &.style-second {
+            .list-service {
+                .service-item {
+                    cursor: pointer;
+
+                    .icon {
+                        background-color: var(--orange);
+                        top: -40px;
+                    }
+
+                    @media (max-width: 767.99px) {
+                        .icon {
+                            top: -30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

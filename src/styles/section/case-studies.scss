@@ -1,0 +1,228 @@
+.case-study-block {
+    &.style-one {
+        .list-case-study {
+            .list {
+                .case-study-item {
+                    position: relative;
+
+                    .text {
+                        position: absolute;
+                        bottom: 60px;
+                        left: 60px;
+                        right: 60px;
+                        transition: all ease 0.5s;
+
+                        .heading5 {
+                            position: relative;
+                            display: inline-block;
+                            margin-left: 0;
+                            transition: all ease 0.3s;
+
+                            a {
+                                position: relative;
+
+                                &::before {
+                                    position: absolute;
+                                    content: "";
+                                    width: 0;
+                                    height: 2px;
+                                    bottom: 0;
+                                    left: 0;
+                                    background-color: #fff;
+                                    transition: all ease 0.4s;
+                                }
+                            }
+
+                            &:hover {
+                                a {
+                                    &::before {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+
+                        a {
+                            &:last-child {
+                                svg {
+                                    transition: all ease 0.3s;
+                                }
+
+                                &:hover {
+                                    svg {
+                                        transform: translateX(6px);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        height: 0;
+                        background-color: var(--blue);
+                        opacity: 0.6;
+                        transition: all ease 0.5s;
+                    }
+
+                    &:hover {
+                        &::before {
+                            height: 100%;
+                        }
+
+                        .text {
+                            bottom: 140px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.style-three {
+        .container {
+            .swiper {
+                overflow: unset;
+            }
+
+            .item-main .bg-img a {
+                &:hover {
+                    background-color: var(--gradient);
+                }
+            }
+        }
+    }
+
+    &.style-four {
+        .list-case-study {
+            @media (max-width: 1024px) and (min-width: 768px) {
+                .case-study-item {
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .case-study-item {
+            &:hover {
+                .bg-img {
+                    img {
+                        transform: scale(1.08);
+                    }
+                }
+
+                .infor {
+                    .heading6 {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.case-study-item {
+    &.style-two {
+        .item-main {
+            position: relative;
+            cursor: pointer;
+
+            .bg-img {
+                position: relative;
+
+                img {
+                    transition: all linear 0.5s;
+                    cursor: pointer;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #121212;
+                    opacity: 0;
+                    transition: all ease 0.3s;
+                    z-index: 0;
+                }
+
+                a {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    transform: translateX(200px);
+                    z-index: 1;
+                    transition: all ease 0.5s;
+
+                    &:hover {
+                        background-color: var(--blue);
+
+                        div,
+                        svg {
+                            color: var(--white);
+                        }
+                    }
+                }
+            }
+
+            .infor {
+                .heading6 {
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: var(--blue);
+                    }
+                }
+            }
+
+            &:hover {
+                .bg-img {
+                    img {
+                        transform: scale(1.06);
+                    }
+
+                    &::after {
+                        opacity: 0.4;
+                    }
+
+                    a {
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+
+    &.style-three {
+        .item-main {
+            .infor {
+                .heading6 {
+                    &:hover {
+                        color: var(--gradient);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menu-tab {
+    .tab-item {
+        white-space: nowrap;
+    }
+
+    @media (max-width: 767.98px) {
+        max-width: max-content;
+        width: 100%;
+        overflow-x: auto;
+    }
+}

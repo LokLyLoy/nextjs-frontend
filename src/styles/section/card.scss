@@ -1,0 +1,94 @@
+.card-block {
+    .bg-img {
+        background-color: #D9D9D9;
+        height: 450px;
+        border-radius: 24px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            transition: all ease 0.5s;
+
+            &:first-child {
+                bottom: -120px;
+                left: 32%;
+                transform: translateX(-50%);
+            }
+
+            &:nth-child(2) {
+                bottom: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+            }
+
+            &:last-child {
+                bottom: -120px;
+                left: 68%;
+                transform: translateX(-50%);
+            }
+
+            &:hover {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 1023.99px) {
+            height: 400px;
+
+            img {
+                &:first-child {
+                    width: 300px;
+                }
+
+                &:nth-child(2) {
+                    width: 220px;
+                }
+
+                &:last-child {
+                    width: 300px;
+                }
+            }
+        }
+
+        @media (max-width: 575.99px) {
+            height: 300px;
+
+            img {
+                &:first-child {
+                    width: 240px;
+                }
+
+                &:nth-child(2) {
+                    width: 160px;
+                }
+
+                &:last-child {
+                    width: 240px;
+                }
+            }
+        }
+
+        @media (max-width: 419.99px) {
+            height: 200px;
+
+            img {
+                &:first-child {
+                    width: 160px;
+                    bottom: -80px;
+                }
+
+                &:nth-child(2) {
+                    width: 100px;
+                    bottom: -10px;
+                }
+
+                &:last-child {
+                    width: 160px;
+                    bottom: -80px;
+                }
+            }
+        }
+    }
+}

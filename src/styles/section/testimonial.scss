@@ -1,0 +1,55 @@
+.testimonial-block {
+    &.style-six {
+        .swiper {
+            padding-left: 200px;
+            padding-right: 200px;
+
+            .item {
+                border-radius: 16px;
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
+                backdrop-filter: blur(30px);
+                overflow: hidden;
+
+                .comment-item {
+                    i.icon-quotes {
+                        opacity: 0.2;
+                        color: var(--white);
+                    }
+                }
+            }
+
+            .swiper-pagination {
+                .swiper-pagination-bullet {
+                    border: 1px solid var(--white);
+
+                    &::before {
+                        border: 1px solid transparent;
+                    }
+                }
+
+                .swiper-pagination-bullet-active {
+                    background: var(--white);
+                    border-color: var(--white);
+
+                    &::before {
+                        border-color: var(--white);
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 1280px) {
+            .swiper {
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .swiper {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.has-line-before {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        width: 0;
+        height: 1px;
+        background-color: var(--black);
+        transition: all ease 0.3s;
+    }
+
+    &.active,
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+    }
+
+    &.line-white {
+        &::before {
+            background-color: var(--white);
+        }
+    }
+
+    &.line-blue {
+        &::before {
+            background-color: var(--blue);
+        }
+    }
+
+    &.line-2px {
+        &::before {
+            height: 2px;
+            bottom: -1px;
+        }
+    }
+}
+
+.active {
+    >.has-line-before {
+        color: var(--black);
+
+        &::before {
+            width: 100%;
+        }
+    }
+}

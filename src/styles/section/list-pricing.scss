@@ -1,0 +1,107 @@
+.pricing-block {
+    .pricing-main {
+        .heading {
+            .switch {
+                .bg-placehover {
+                    display: block;
+                    width: 80px;
+                    height: 40px;
+                    border-radius: 99px;
+                    border: none;
+                    outline: none;
+                    position: relative;
+                    transition: all ease 0.6s;
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 32px;
+                        height: 32px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 4px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        transition: all ease 0.3s;
+                    }
+                }
+
+                &.enable {
+                    .bg-placehover {
+                        background-color: var(--blue);
+
+                        &::before {
+                            left: 44px;
+                        }
+                    }
+                }
+            }
+
+            .switch.enable .body3:first-child {
+                color: var(--placehover);
+            }
+
+            .switch.enable .body3:last-child {
+                color: var(--on-surface);
+            }
+        }
+    }
+
+    &.style-four {
+        .pricing-main {
+            .heading {
+                .switch {
+                    &.enable {
+                        .bg-placehover {
+                            background-color: var(--success);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.style-six {
+        .pricing-main {
+            .heading {
+                .switch {
+                    &.enable {
+                        .bg-placehover {
+                            background-color: var(--orange);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes showList {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.list-pricing.hide {
+    display: none;
+}
+
+.list-pricing.show {
+    display: block;
+    animation: showList ease-in-out 0.7s;
+}
+
+.list-pricing-year.hide {
+    display: none;
+}
+
+.list-pricing-year.show {
+    display: block;
+    animation: showList ease-in-out 0.7s;
+}

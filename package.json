@@ -9,9 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.7",
+    "animate.css": "^4.1.1",
+    "axios": "^1.8.2",
+    "framer-motion": "^12.4.10",
+    "next": "15.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.1"
+    "react-fast-marquee": "^1.6.5",
+    "react-paginate": "^8.3.0",
+    "react-slick": "^0.30.3",
+    "sass": "^1.85.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

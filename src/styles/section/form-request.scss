@@ -1,0 +1,46 @@
+.form-request-block {
+    &.style-two {
+        background-attachment: fixed;
+        // background-image: url('../../../public/images/banner/form-cta-about.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &.style-three {
+
+        .heading2,
+        .caption1 {
+            color: var(--black);
+        }
+    }
+
+    &.style-four {
+        .form {
+            background: rgba($color: #FFFFFF, $alpha: 0.2);
+        }
+    }
+
+    &.style-six {
+        .form-block {
+            background: rgba($color: #FFFFFF, $alpha: 0.1);
+            backdrop-filter: blur(20px);
+        }
+    }
+
+    &.style-about {
+        .form-block {
+            background-color: var(--grey);
+
+            .heading6 {
+                color: var(--white);
+            }
+
+            input,
+            select,
+            textarea {
+                background-color: var(--white);
+            }
+        }
+    }
+}

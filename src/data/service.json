@@ -1,0 +1,170 @@
+[
+    {
+        "icon": "icon-coin-chair",
+        "category": "payment solution",
+        "title": "Cryptocurrency Trading",
+        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
+        "shortDesc": "Get personalized financial advice to help reach your financial goals."
+    },
+    {
+        "icon": "icon-hand-tick",
+        "category": "payment solution",
+        "title": "Portfolio Management",
+        "desc": "We analyze market trends, manage risks, and optimize your portfolio to maximize returns and achieve your financial goals.",
+        "shortDesc": "Get personalized financial advice to help reach your financial goals."
+    },
+    {
+        "icon": "icon-hand-house",
+        "category": "payment solution",
+        "title": "Investment Advice",
+        "desc": "Our team of experienced advisors will guide you in making informed investment, whether you're a beginner trader.",
+        "shortDesc": "Get personalized financial advice to help reach your financial goals."
+    },
+    {
+        "icon": "icon-gear-warning",
+        "category": "payment solution",
+        "title": "Risk Management",
+        "desc": "We employ industry-leading tools and techniques to protect your investments and minimize potential losses.",
+        "shortDesc": "Get personalized financial advice to help reach your financial goals."
+    },
+    {
+        "icon": "icon-text-search",
+        "category": "payment solution",
+        "title": "Research and Analysis",
+        "desc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions.",
+        "shortDesc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions."
+    },
+    {
+        "icon": "icon-education",
+        "category": "payment solution",
+        "title": "Education and Resources",
+        "desc": "Expand your knowledge and skills in cryptocurrency trading through our educational resources.",
+        "shortDesc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions."
+    },
+    {
+        "icon": "icon-coin-hand",
+        "category": "financial planning",
+        "title": "Budget planning",
+        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
+        "shortDesc": "Get personalized financial advice to help reach your financial goals."
+    },
+    {
+        "icon": "icon-coin-pig",
+        "category": "financial planning",
+        "title": "Savings advice",
+        "desc": "We analyze market trends, manage risks, and optimize your portfolio to maximize returns and achieve your financial goals.",
+        "shortDesc": "Get personalized financial advice to help reach your financial goals."
+    },
+    {
+        "icon": "icon-coin-virus",
+        "category": "financial planning",
+        "title": "Financial assessment",
+        "desc": "Our team of experienced advisors will guide you in making informed investment, whether you're a beginner trader.",
+        "shortDesc": "Get personalized financial advice to help reach your financial goals."
+    },
+    {
+        "icon": "icon-hand-protect",
+        "category": "financial planning",
+        "title": "Insurance advice",
+        "desc": "We employ industry-leading tools and techniques to protect your investments and minimize potential losses.",
+        "shortDesc": "Get personalized financial advice to help reach your financial goals."
+    },
+    {
+        "icon": "icon-hand-touch",
+        "category": "online banking",
+        "title": "Internet Banking",
+        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
+        "shortDesc": "With our Internet Banking service, you can access your accounts anytime, anywhere"
+    },
+    {
+        "icon": "icon-user-lock",
+        "category": "online banking",
+        "title": "Mobile Banking",
+        "desc": "We analyze market trends, manage risks, and optimize your portfolio to maximize returns and achieve your financial goals.",
+        "shortDesc": "Our Mobile Banking app brings you fast and convenient mobile financial experience."
+    },
+    {
+        "icon": "icon-coin-bag",
+        "category": "online banking",
+        "title": "Money Transfers",
+        "desc": "Our team of experienced advisors will guide you in making informed investment, whether you're a beginner trader.",
+        "shortDesc": "Our money transfer service allows you to send money quickly and securely to anywhere in the world"
+    },
+    {
+        "icon": "icon-chart-blue",
+        "category": "online banking",
+        "title": "Account Management",
+        "desc": "We employ industry-leading tools and techniques to protect your investments and minimize potential losses.",
+        "shortDesc": "Managing your accounts has never been easier with Online Banking. Check your balances."
+    },
+    {
+        "icon": "icon-coin-chair",
+        "category": "personal finance",
+        "title": "Retirement Planning",
+        "desc": "We help you define retirement goals and create a savings and investment plan that ensures a comfortable and financially stable life after retirement.",
+        "shortDesc": "With our Internet Banking service, you can access your accounts anytime, anywhere"
+    },
+    {
+        "icon": "icon-hand-message",
+        "category": "personal finance",
+        "title": "Financial Planning",
+        "desc": "We create tailored savings and investment plans that align with your financial situation, helping to increase income and ensure financial security in the future",
+        "shortDesc": "Our Mobile Banking app brings you fast and convenient mobile financial experience."
+    },
+    {
+        "icon": "icon-hand-house",
+        "category": "personal finance",
+        "title": "Estate Planning",
+        "desc": "We provide advice on suitable insurance products such as health insurance and asset protection to ensure maximum protection for you and your family.",
+        "shortDesc": "Our money transfer service allows you to send money quickly and securely to anywhere in the world"
+    },
+    {
+        "icon": "icon-hand-chart",
+        "category": "personal finance",
+        "title": "Investment Management",
+        "desc": "We create tailored savings and investment plans that align with your financial situation, helping to increase income and ensure financial security in the future.",
+        "shortDesc": "Managing your accounts has never been easier with Online Banking. Check your balances."
+    },
+    {
+        "icon": "icon-pc-code",
+        "category": "blockchain",
+        "title": "Blockchain Development",
+        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
+        "shortDesc": "We offer comprehensive blockchain development services to help businesses harness the power of this transformative technology"
+    },
+    {
+        "icon": "icon-code",
+        "category": "blockchain",
+        "title": "Smart Contract Development",
+        "desc": "We analyze market trends, manage risks, and optimize your portfolio to maximize returns and achieve your financial goals.",
+        "shortDesc": "Our experts specialize in creating smart contracts that automate processes and enable decentralized applications."
+    },
+    {
+        "icon": "icon-lamp-gear",
+        "category": "blockchain",
+        "title": "Blockchain Integration",
+        "desc": "Our team of experienced advisors will guide you in making informed investment, whether you're a beginner trader.",
+        "shortDesc": "By seamlessly integrating blockchain with your operations, you can enhance data security, transparency, and traceability, leading to improved efficiency and trust."
+    },
+    {
+        "icon": "icon-text-pen",
+        "category": "blockchain",
+        "title": "Blockchain Consulting",
+        "desc": "We employ industry-leading tools and techniques to protect your investments and minimize potential losses.",
+        "shortDesc": "Our experienced consultants offer strategic guidance and insights to help you navigate the complex landscape of blockchain technology."
+    },
+    {
+        "icon": "icon-chart",
+        "category": "blockchain",
+        "title": "ICO/STO Development",
+        "desc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions.",
+        "shortDesc": "We assist businesses in launching successful Initial Coin Offerings (ICOs) and Security Token Offerings (STOs)."
+    },
+    {
+        "icon": "icon-vali",
+        "category": "blockchain",
+        "title": "Wallet Development",
+        "desc": "Expand your knowledge and skills in cryptocurrency trading through our educational resources.",
+        "shortDesc": "We develop secure and user-friendly cryptocurrency wallets that enable seamless storage and management of digital assets"
+    }
+]

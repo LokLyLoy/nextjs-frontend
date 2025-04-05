@@ -1,0 +1,48 @@
+.list-pagination {
+    .pagination {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        li {
+            width: 44px;
+            height: 44px;
+            border-radius: 6px;
+            border: 1px solid var(--line);
+            transition: all ease 0.3s;
+
+            a {
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 500;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &:hover,
+            &.active {
+                background-color: var(--blue);
+                color: var(--white);
+            }
+
+            &.disabled {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767.99px) {
+            li {
+                width: 36px;
+                height: 36px;
+
+                a {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

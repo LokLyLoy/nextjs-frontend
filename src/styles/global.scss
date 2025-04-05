@@ -1,0 +1,401 @@
+:root {
+    --black: #121212;
+    --secondary: #64666C;
+    --surface: #F5F5F2;
+    --blue: #2868D8;
+    --critical: #EB4D4D;
+    --success: #37CC8E;
+    --orange: #EA603F;
+    --white: #FFFFFF;
+    --deep-purple: #15143B;
+    --gradient: #5D47E2;
+    --dark: #0F1E37;
+    --grey: #3F4B5F;
+    --dark-blue: #173363;
+    --dark-purple: #130E38;
+    --placehover: #B1B1B1;
+    --yellow: #F2C94C;
+    --line: rgba(0, 0, 0, 0.1)
+}
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    background-color: var(--white);
+}
+
+html,
+body {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--black);
+    user-select: none;
+}
+
+div,
+span,
+p {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+select {
+    appearance: none;
+    outline: none;
+}
+
+.select-block {
+    position: relative;
+
+    >.icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(calc(-50% - 1px));
+    }
+}
+
+input,
+textarea {
+    outline: none;
+    border: 1px solid transparent;
+    transition: border-color ease 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--blue);
+}
+
+button {
+    outline: none;
+}
+
+.checkbox-input {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    position: relative;
+
+    input {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .icon-checkbox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+    }
+
+    input:checked+.icon-checkbox {
+        opacity: 1;
+    }
+}
+
+/* Main class used in Finatex */
+.container {
+    max-width: 1442px !important;
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin: 0 auto;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 5px 0px rgba(28, 36, 51, 0.15);
+}
+
+.box-shadow-sm {
+    box-shadow: 0px 2px 2px 0px rgba(18, 23, 32, 0.1);
+}
+
+.hover-box-shadow {
+    transition: all ease 0.3s;
+
+    &:hover {
+        box-shadow: 1px 5px 20px 0px rgba(37, 82, 91, 0.2);
+    }
+}
+
+.bg-gradient-blue {
+    background: (linear-gradient(136deg, #5473DC 0%, #8BF7FF 100%));
+}
+
+.heading1 {
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.heading2 {
+    font-size: 56px;
+    line-height: 68px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.heading3 {
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.heading4 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.heading5 {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.heading6 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.heading7 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.text-title {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.text-button {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.text-button-sm {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.text-sub-heading2 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+}
+
+.body1 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.body2 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.caption1 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.caption2 {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.text-button-uppercase {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+}
+
+.button-main {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 12px 28px;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all ease 0.4s;
+
+    &.bg-blue {
+        &:hover {
+            background-color: var(--dark-blue);
+        }
+    }
+}
+
+.button-rounded {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 15px 28px;
+    border-radius: 100px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+@media (max-width: 1023.99px) {
+    .heading1 {
+        font-size: 62px;
+        line-height: 74px;
+    }
+
+    .heading2 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .heading3 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .heading4 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .heading5 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .heading6 {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    html,
+    body {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .heading1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .heading2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .heading3 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .heading4 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .heading5 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .heading6 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .text-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .text-button {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .text-button-sm {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .body1 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .body2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .caption1 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .caption2 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .button-main {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 10px 20px;
+        border-radius: 6px;
+    }
+
+    .button-rounded {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 12px 20px;
+        border-radius: 6px;
+    }
+}
