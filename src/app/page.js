@@ -8,6 +8,7 @@ import PaymentGateway from "@/components/PaymentGateway/PaymentGateway";
 import CasesStudy from "@/components/CasesStudy/CasesStudy";
 import PaymentGatewayTwo from "@/components/PaymentGateway/PaymentGatewayTwo";
 import FormRequest from "@/components/FormRequest/FormRequest";
+import Testimonial from "@/components/Testimonial/Testimonial";
 
 const page = () => {
   return (
@@ -23,6 +24,7 @@ const page = () => {
         <CasesStudy/>
         <PaymentGatewayTwo/>
         <FormRequest/>
+        <Testimonial/>
 
       </main>
     </div>

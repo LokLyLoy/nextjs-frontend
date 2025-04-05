@@ -47,7 +47,7 @@ const FormRequest = () => {
 
                 </div>
 
-                <button className='button-main flex-shrink-0 bg-black hover:bg-blue-500 text-white rounded-full'>Submit</button>
+                <button className='button-main flex-shrink-0 bg-black hover:bg-blue-500 text-white !rounded-full'>Submit</button>
 
             </form>
 
