@@ -4,13 +4,21 @@ import Menu from "@/components/Header/Menu/Menu";
 
 const Page = () => {
     return (
-    <>
-        <TopNav/>
-        <Menu/>
-        <div>
-            <h1>About page</h1>
-        </div>
-    </>
+    <div className='overflow-x-hidden'>
+        <header id="header">
+            <TopNav />
+            <Menu />
+        </header>
+
+        <main className='content'>
+            123
+        </main>
+
+        <footer id='footer'>
+            footer
+        </footer>
+
+    </div>
     );
 };
 

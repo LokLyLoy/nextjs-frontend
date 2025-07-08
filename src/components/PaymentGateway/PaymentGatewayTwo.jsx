@@ -67,8 +67,6 @@ const PaymentGatewayTwo = () => {
                                 </div>
 
                             </div>
-
-
                         </div>
 
                     </div>

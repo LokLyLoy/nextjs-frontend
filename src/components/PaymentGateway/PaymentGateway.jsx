@@ -28,7 +28,8 @@ const PaymentGateway = () => {
                     <div className='payment-infor lg:w-1/2 xl:pl-20 lg:pt-10' style={{transform: isInView ? "none" : 'translateY(60px)', opacity: isInView ? 1 : 0, transition: 'all 0.7s cubic-bezier(0.17, 0.55, 1) 0.3s'}}>
                         <div className='heading flex items-center !gap-4 max-lg:flex-wrap'>
                             <div className='flex items-center'>
-                                <div className='img sm:w-12 !w-10 sm:h-12 !h-10 !rounded-full !overflow-hidden bg-line !p-0 !z-[3]'>
+                                <div
+                                    className='img sm:w-12 !w-10 sm:h-12 !h-10 !rounded-full !overflow-hidden bg-line !p-0 !z-[3]'>
                                     <Image
                                         src="/images/myProfiile.jpg"
                                         alt='img'

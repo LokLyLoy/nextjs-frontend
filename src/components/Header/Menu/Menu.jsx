@@ -89,36 +89,60 @@ const Menu = () => {
 
         <div id='menu-mobile-block' className={`${openMenuMobile && 'open'}`}>
             <div className='menu-mobile-main'>
-                <div className='container'>
-                    <ul className='menu-nav-mobile h-full pt-1 pb-1'>
-                        <li className='nav-item-mobile h-full flex-column gap-2 pt-2 pl-3 pr-3 pb-2 cursor-pointer'>
-                            <a className='nav-link-mobile flex items-center justify-between' href='/'>
-                                <span className='body2 font-bold'>Home</span>
+                <div className="container mx-auto !px-4 !py-4">
+                    <ul className="menu-nav-mobile flex flex-col divide-y divide-gray-200 rounded-md overflow-hidden shadow-sm bg-white">
+                        <li className="nav-item-mobile">
+                            <a
+                                className="nav-link-mobile flex items-center justify-between !px-4 !py-3 hover:bg-gray-100 transition-all"
+                                href="/"
+                            >
+                                <span className="text-base font-semibold text-gray-800">Home</span>
+                                <Icon.CaretRight className='text-2xl text-gray-800' weight='bold'/>
                             </a>
                         </li>
-                        <li className='nav-item-mobile h-full flex-column gap-2 pt-2 pl-3 pr-3 pb-2 cursor-pointer'>
-                            <a className='nav-link-mobile flex items-center justify-between' href='/about'>
-                                <span className='body2 font-bold'>About Us</span>
+                        <li className="nav-item-mobile">
+                            <a
+                                className="nav-link-mobile flex items-center justify-between !px-4 !py-3 hover:bg-gray-100 transition-all"
+                                href="/about"
+                            >
+                                <span className="text-base font-semibold text-gray-800">About Us</span>
+                                <Icon.CaretRight className='text-2xl text-gray-800' weight='bold'/>
                             </a>
                         </li>
-                        <li className='nav-item-mobile h-full flex-column gap-2 pt-2 pl-3 pr-3 pb-2 cursor-pointer'>
-                            <a className='nav-link-mobile flex items-center justify-between' href='/service'>
-                                <span className='body2 font-bold'>Services</span>
+                        <li className="nav-item-mobile">
+                            <a
+                                className="nav-link-mobile flex items-center justify-between !px-4 !py-3 hover:bg-gray-100 transition-all"
+                                href="/service"
+                            >
+                                <span className="text-base font-semibold text-gray-800">Services</span>
+                                <Icon.CaretRight className='text-2xl text-gray-800' weight='bold'/>
                             </a>
                         </li>
-                        <li className='nav-item-mobile h-full flex-column gap-2 pt-2 pl-3 pr-3 pb-2 cursor-pointer'>
-                            <a className='nav-link-mobile flex items-center justify-between' href='/case-studies'>
-                                <span className='body2 font-bold'>Case Studies</span>
+                        <li className="nav-item-mobile">
+                            <a
+                                className="nav-link-mobile flex items-center justify-between !px-4 !py-3 hover:bg-gray-100 transition-all"
+                                href="/case-studies"
+                            >
+                                <span className="text-base font-semibold text-gray-800">Case Studies</span>
+                                <Icon.CaretRight className='text-2xl text-gray-800' weight='bold'/>
                             </a>
                         </li>
-                        <li className='nav-item-mobile h-full flex-column gap-2 pt-2 pl-3 pr-3 pb-2 cursor-pointer'>
-                            <a className='nav-link-mobile flex items-center justify-between' href='/blog'>
-                                <span className='body2 font-bold'>Blog</span>
+                        <li className="nav-item-mobile">
+                            <a
+                                className="nav-link-mobile flex items-center justify-between !px-4 !py-3 hover:bg-gray-100 transition-all"
+                                href="/blog"
+                            >
+                                <span className="text-base font-semibold text-gray-800">Blog</span>
+                                <Icon.CaretRight className='text-2xl text-gray-800' weight='bold'/>
                             </a>
                         </li>
-                        <li className='nav-item-mobile h-full flex-column gap-2 pt-2 pl-3 pr-3 pb-2 cursor-pointer'>
-                            <a className='nav-link-mobile flex items-center justify-between' href='/contact'>
-                                <span className='body2 font-bold'>Contact Us</span>
+                        <li className="nav-item-mobile">
+                            <a
+                                className="nav-link-mobile flex items-center justify-between !px-4 !py-3 hover:bg-gray-100 transition-all"
+                                href="/contact"
+                            >
+                                <span className="text-base font-semibold text-gray-800">Contact Us</span>
+                                <Icon.CaretRight className='text-2xl text-gray-800' weight='bold'/>
                             </a>
                         </li>
                     </ul>

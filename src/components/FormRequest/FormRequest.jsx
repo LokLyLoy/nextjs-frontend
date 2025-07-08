@@ -36,8 +36,8 @@ const FormRequest = () => {
                             autoComplete='off'
                         />
                     </div>
-                    <div className='w-full select-arrow-none relative !hover:cursor-pointer'>
-                        <select name='category' className='body3 md:py-[14px] !py-3 !px-5 bg-surface rounded-lg w-full bg-gray-100'>
+                    <div className='w-full select-arrow-none relative'>
+                        <select name='category' className='body3 md:py-[14px] !py-3 !px-5 bg-surface rounded-lg w-full bg-gray-100 cursor-pointer'>
                             <option value='Financial Planning'>Financial Planning</option>
                             <option value='Business Planning'>Business Planning</option>
                             <option value='Development Planning'>Development Planning</option>
@@ -47,7 +47,7 @@ const FormRequest = () => {
 
                 </div>
 
-                <button className='button-main flex-shrink-0 bg-black hover:bg-blue-500 text-white !rounded-full'>Submit</button>
+                <button className='button-main flex-shrink-0 bg-black hover:bg-blue-500 text-white !rounded-full' type='submit'>Submit</button>
 
             </form>
 
