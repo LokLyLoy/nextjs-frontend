@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Partner = () => {
     return (
-    <div className='cta-block relative lg:h-[120px] !h-[140px]'>
+    <div className='cta-block relative lg:h-[120px] !h-[140px] !mt-10'>
         <div className='bg-cta w-full h-full absolute top-0 left-0 z-[-1]'>
             <Image
                 width={5000}

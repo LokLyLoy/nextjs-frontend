@@ -7,7 +7,7 @@ const ServiceItem = ({data, number}) => {
     <div className='service-item !p-8 bg-white rounded-lg border border-line hover-box-shadow'>
         <Link href={'/'} className='service-item-main h-full'>
             <div className='heading flex items-center justify-between'>
-                <i className={`${data.icon} text-blue md:text-6xl`}></i>
+                <i className={`${data.icon} text-blue text-5xl md:text-6xl`}></i>
                 <div className='number heading3 text-placeholder text-slate-400'>
                     {number + 1}
                 </div>

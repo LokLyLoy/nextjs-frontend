@@ -5,6 +5,9 @@ import Link from "next/link";
 import * as Icon from "@phosphor-icons/react";
 
 const Footer = () => {
+
+    const year = new Date().getFullYear();
+
     return (
         <div className='footer-block bg-slate-800 !pt-[60px]'>
             <div className='container'>
@@ -191,8 +194,26 @@ const Footer = () => {
                     </div>
 
                 </div>
-            </div>
 
+                <div className='border-line'>
+                    <div className='footer-buttom flex items-center justify-between !pt-3 !pb-3'>
+                        <div className='left-block flex items-center'>
+                            <div className='copy-right text-surface caption1 text-white'>
+                                @{year} LyCoding.
+                                &copy; All Rights Reserved
+                            </div>
+                        </div>
+
+                        <div className='nav-link flex items-center !gap-3 text-white'>
+                            <a href='#' className='text-surface caption1 hover:underline'>Terms of Services</a>
+                                <span className='caption1 text-surface'>|</span>
+                            <a href='#' className='text-surface caption1 hover:underline'>Privacy Policy</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     );
 };
