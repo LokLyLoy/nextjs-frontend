@@ -46,7 +46,7 @@ const Menu = () => {
                     </li>
 
                     <li className={`nav-item h-full flex items-center justify-center home ${pathname === '/service' ? 'active' : ''}`}>
-                        <Link className='nav-link text-title items-center gap-1' href={'/'}>
+                        <Link className='nav-link text-title items-center gap-1' href={'/service'}>
                             <span>Our Services</span>
                         </Link>
                     </li>
