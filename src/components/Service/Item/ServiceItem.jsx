@@ -5,7 +5,7 @@ const ServiceItem = ({data, number}) => {
 
     return (
     <div className='service-item !p-8 bg-white rounded-lg border border-line hover-box-shadow'>
-        <Link href={'/'} className='service-item-main h-full'>
+        <Link href={'/service/service-details/[slug]'} as={`/service/service-details/${data.title.toLowerCase().replace(/ /g, '-')}`} className='service-item-main h-full'>
             <div className='heading flex items-center justify-between'>
                 <i className={`${data.icon} text-blue text-5xl md:text-6xl`}></i>
                 <div className='number heading3 text-placeholder text-slate-400'>
