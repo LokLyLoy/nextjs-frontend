@@ -23,90 +23,97 @@ const Page = ({ slug }) => {
                     desc="At LokLy’s Management System, we offer a comprehensive suite of tools and services designed to streamline and simplify your business operations. Whether you’re running a retail shop, wholesale distributor, or service-based business, our system adapts to your needs."
                 />
 
-                <section className="content-detail-block lg:py-[100px] sm:py-16 !py-10">
+                <section className="content-detail-block lg:py-[100px] sm:py-16 !py-10 bg-gray-50">
                     <div className="container">
-                        <div className="flex flex-col items-center xl:flex-row !gap-8">
+                        <div className="flex flex-col xl:flex-row !gap-10">
+
+                            {/* Main Content */}
                             <div className="w-full xl:w-3/4">
-                                <div className="xl:pr-[80px]">
-                                    <h3 className="heading3">
+                                <div className="xl:!pr-16">
+                                    <h3 className="heading3 font-bold text-gray-900">
                                         Cryptocurrency Trading
                                     </h3>
 
-                                    <div className="bg-img !mt-5 !mb-5">
+                                    <div className="bg-img !mt-6 !mb-6">
                                         <Image
-                                            width={5000}
-                                            height={5000}
+                                            width={1600}
+                                            height={900}
                                             src="/images/assessment.webp"
-                                            alt="img"
-                                            className="w-full h-full rounded-2xl shadow-md"
+                                            alt="Cryptocurrency Trading"
+                                            className="w-full h-auto rounded-2xl shadow-lg object-cover"
                                         />
                                     </div>
 
                                     <p className="body2 text-secondary !mt-4 leading-relaxed">
-                                        Our platform is designed to deliver seamless performance and reliability, ensuring that every interaction feels intuitive and efficient. By combining modern technology with a user-focused approach, we create solutions that help businesses grow and adapt in an ever-changing digital landscape. Whether you’re managing data, engaging with clients, or streamlining operations, our tools are built to provide clarity, scalability, and long-term value.
+                                        Our platform is designed to deliver seamless performance and
+                                        reliability, ensuring that every interaction feels intuitive
+                                        and efficient. By combining modern technology with a
+                                        user-focused approach, we create solutions that help businesses
+                                        grow and adapt in an ever-changing digital landscape.
+                                        Whether you’re managing data, engaging with clients, or
+                                        streamlining operations, our tools are built to provide clarity,
+                                        scalability, and long-term value.
                                     </p>
                                 </div>
                             </div>
 
-                            <aside className="w-full xl:w-1/4">
-                                <div className="more-infor border border-line rounded-xl !py-8 !px-8">
-                                    <h6 className="heading6 text-center">
-                                        Our best services
+                            {/* Sidebar */}
+                            <aside className="w-full xl:w-1/4 flex flex-col !gap-8">
+
+                                {/* Services */}
+                                <div className="border border-line rounded-2xl !p-8 shadow-sm bg-white">
+                                    <h6 className="heading6 text-center font-semibold text-gray-800">
+                                        Our Best Services
                                     </h6>
-                                    <p className="body3 text-secondary !mt-2">
-                                        We provide reliable, innovative, and tailored solutions designed to meet your needs and deliver lasting value.
+                                    <p className="body3 text-secondary !mt-2 text-center">
+                                        Reliable, innovative, and tailored solutions designed to meet
+                                        your needs and deliver lasting value.
                                     </p>
 
-                                    <nav className="list-nav !mt-5">
-
-                                        <Link className='nav-item rounded-lg flex-between' href='/'>
-                                            <div className='text-button text-secondary'>
-                                                payment solution
-                                            </div>
-                                        </Link>
-
-                                        <Link className='nav-item rounded-lg flex-between' href='/'>
-                                            <div className='text-button text-secondary'>
-                                                personal finance
-                                            </div>
-                                        </Link>
-
-                                        <Link className='nav-item rounded-lg flex-between' href='/'>
-                                            <div className='text-button text-secondary'>
-                                                online banking
-                                            </div>
-                                        </Link>
-
-
-                                        <Link className='nav-item rounded-lg flex-between' href='/'>
-                                            <div className='text-button text-secondary'>
-                                                financial planning
-                                            </div>
-                                        </Link>
-
+                                    <nav className="grid !mt-6 !gap-3">
+                                        {[
+                                            { title: "Payment Solution", href: "/" },
+                                            { title: "Personal Finance", href: "/" },
+                                            { title: "Online Banking", href: "/" },
+                                            { title: "Financial Planning", href: "/" },
+                                        ].map((item, idx) => (
+                                            <Link
+                                                key={idx}
+                                                href={item.href}
+                                                className="nav-item !px-4 !py-3 rounded-lg bg-gray-100 hover:bg-primary hover:text-white transition text-button text-secondary"
+                                            >
+                                                {item.title}
+                                            </Link>
+                                        ))}
                                     </nav>
                                 </div>
 
-                                <div className='ads-block rounded-lg md:mt-10 !mt-6 relative'>
-                                    <div className='bg-img'>
-                                        <Image width={5000} height={5000} src='/images/ads.webp' alt='ads'/>
-                                    </div>
-
-                                    <div className='text flex flex-col justify-between absolute left-0 top-0 w-full h-full !p-8'>
-                                        <div className='title'>
-                                            <div className='heading5 text-white'>
+                                {/* CTA Block */}
+                                <div className="relative rounded-2xl overflow-hidden shadow-md">
+                                    <Image
+                                        width={800}
+                                        height={500}
+                                        src="/images/ads.webp"
+                                        alt="Contact Us"
+                                        className="w-full h-full object-cover"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/20 !p-8 flex flex-col justify-between">
+                                        <div>
+                                            <h5 className="heading5 text-white font-semibold">
                                                 Let's Talk
-                                            </div>
-
-                                            <div className='body3 text-white !mt-4'>
+                                            </h5>
+                                            <p className="body3 text-gray-200 !mt-3">
                                                 Save time. Boost productivity. Grow faster.
-                                            </div>
+                                            </p>
                                         </div>
-
-                                        <div className='button-block md:mt-10 !mt-6 '>
-                                            <Link className='button-main hover:bg-black hover:text-white inline-block bg-white text-button' href='/contact'>Contact Us</Link>
+                                        <div className="!mt-6">
+                                            <Link
+                                                href="/contact"
+                                                className="button-main bg-white text-black hover:bg-primary hover:text-white transition inline-block !px-6 !py-3 rounded-lg shadow"
+                                            >
+                                                Contact Us
+                                            </Link>
                                         </div>
-
                                     </div>
                                 </div>
 
@@ -114,6 +121,7 @@ const Page = ({ slug }) => {
                         </div>
                     </div>
                 </section>
+
             </main>
 
             <Partner className="lg:mt-[100px] sm:mt-16 mt-10" />
